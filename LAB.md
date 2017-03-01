@@ -3,7 +3,16 @@
 
 ## Description
 
-Create an app that shows movie data from http://www.omdbapi.com/. (For example, Star Wars movies: http://www.omdbapi.com/?s=Star%20Wars&plot=short&r=json)
+Create an app that shows movie data from http://www.omdbapi.com/. (For example, Star Wars movies:
+
+```
+fetch('http://www.omdbapi.com/?s=Star%20Wars&plot=short&r=json')
+ .then(res => res.json())
+ .then(movies => {
+     ...
+ });
+```
+ 
 You are free to query the data for a genre, actor, whatever that you want.
 
 * Use `create-react-app` to create your react app project
