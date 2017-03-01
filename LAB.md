@@ -14,15 +14,17 @@ You are free to query the data for a genre, actor, whatever that you want.
  
 * Decompose into meaningful components (logical parts)
 
+* Use `key` to track list items
+
 * Add at least a moderately acceptable level of css style. You can either use:
   * Import `main.css` in index.js
   * Use inline styles directly on your elements
 
 ## Rubric *10pts*
 
-* Renders Movies *1pts*
-* Correct/Idomatic JSX/React/JS *3pts*
-* Component composition *2pts*
+* Renders movies *1pts*
+* Correct/idiomatic jsx and React *3pts*
+* Component (de)composition *2pts*
 * HTML/CSS *1pts*
 * Project structure/org *1pts*
-* Curiosity/creativity *2pts*
+* Curiosity/creativity *1pts*
