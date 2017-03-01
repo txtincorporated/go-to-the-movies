@@ -5,7 +5,7 @@
 
 Create an app that shows movie data from http://www.omdbapi.com/. (For example, Star Wars movies:
 
-```
+```js
 fetch('http://www.omdbapi.com/?s=Star%20Wars&plot=short&r=json')
  .then(res => res.json())
  .then(movies => {
