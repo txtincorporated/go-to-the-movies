@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const myMovies = [];
+let myMovies = [];
 
 function getMovies() {
   fetch('http://www.omdbapi.com/?s=Star%20Wars&plot=short&r=json')
     .then(res => res.json())
-    .then(movies => myMovies.push(movies))
+    .then(res => {myMovies = res.Search})
+    .then(() => console.log(myMovies))
 }
 
-getMovies();
+// getMovies();
 
 function myMovie(props) {
   return (
@@ -20,7 +21,15 @@ function myMovie(props) {
   );
 }
 
+function App(props) {
+  getMovies();
+  myMovies.map(() => {
+    return myMovie();
+  });
+}
+
 ReactDOM.render(
-  <div>Hello!</div>,
+  <App movies={myMovies}/>,
   document.getElementById('root')
 );
+
